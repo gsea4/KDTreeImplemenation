@@ -40,7 +40,15 @@ print("Done")
 import numpy as np
 from scipy.spatial import cKDTree
 #arr = np.array([(1,7), (1,6), (6,6), (6,6)])
-arr = np.array([(6,1), (7,1), (6,6)])
+arr = np.array([(3,5), (3,6), (2,6)])
 tree = cKDTree(arr, 1)
 
-print("Something")
+import numpy as np
+prev = np.array([3,5])
+arr = np.array([(3,5), (3,6), (2,6)])
+print(prev)
+print(arr[0])
+t = arr[0] == prev
+print(t.all())
+if t.all():
+    print("Something")
